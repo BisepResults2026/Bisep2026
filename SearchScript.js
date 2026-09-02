@@ -1,30 +1,30 @@
 // ========== THE FISHING DATA ==========
 // Define which roll numbers are "special" (will show fake results)
-const validRolls = ['735031', '735032', '735033', '735034', '735035', '735036'];
+const validRolls = ['735031', '735032', '735033', '735034', '735035', '735036','735037','735038'];
 
 // Data for each roll number
 const fakeResults = {
     '735031': {
         rollNo: '735031',
         name: 'AHMAD ALI',
-        fatherName: 'MUHAMMAD ALI',
+        fatherName: 'SHAH FAISAL',
         marks: '450',
         grade: 'A',
         subjects: [
             { sr: 1, code: 'E-I', theory: 80, practical: ' ' },
             { sr: 2, code: 'U-I', theory: 75, practical: ' ' },
-            { sr: 3, code: 'IE-I', theory: 35, practical: ' ' },
-            { sr: 4, code: 'MQH-I', theory: 40, practical: ' ' },
-            { sr: 5, code: 'M-I', theory: 70, practical: ' ' },
-            { sr: 6, code: 'PH-I', theory: 78, practical: ' ' },
-            { sr: 7, code: 'CS-I', theory: 72, practical: ' ' },
+            { sr: 3, code: 'IE-I', theory: 42, practical: ' ' },
+            { sr: 4, code: 'MQH-I', theory: 36, practical: ' ' },
+            { sr: 5, code: 'M-I', theory: 63, practical: ' ' },
+            { sr: 6, code: 'PH-I', theory: 44, practical: '10' },
+            { sr: 7, code: 'CS-I', theory: 80, practical: '20' },
         ]
     },
     '735032': {
         rollNo: '735032',
         name: 'BILAL KHAN',
-        fatherName: 'GHULAM KHAN',
-        marks: '480',
+        fatherName: 'ISA KHAN',
+        marks: '485',
         grade: 'A',
         subjects: [
             { sr: 1, code: 'E-I', theory: 82, practical: ' ' },
@@ -32,72 +32,106 @@ const fakeResults = {
             { sr: 3, code: 'IE-I', theory: 42, practical: ' ' },
             { sr: 4, code: 'MQH-I', theory: 45, practical: ' ' },
             { sr: 5, code: 'M-I', theory: 73, practical: ' ' },
-            { sr: 6, code: 'PH-I', theory: 80, practical: ' ' },
-            { sr: 7, code: 'CS-I', theory: 80, practical: ' ' },
+            { sr: 6, code: 'PH-I', theory: 70, practical: '15' },
+            { sr: 7, code: 'CH-I', theory: 68, practical: '12' },
         ]
     },
     '735033': {
         rollNo: '735033',
         name: 'DANIAL AHMED',
-        fatherName: 'AHMED HASSAN',
-        marks: '510',
+        fatherName: 'ADNAN',
+        marks: '524',
         grade: 'A1',
         subjects: [
-            { sr: 1, code: 'E-I', theory: 88, practical: ' ' },
-            { sr: 2, code: 'U-I', theory: 85, practical: ' ' },
-            { sr: 3, code: 'IE-I', theory: 48, practical: ' ' },
-            { sr: 4, code: 'MQH-I', theory: 50, practical: ' ' },
-            { sr: 5, code: 'M-I', theory: 78, practical: ' ' },
-            { sr: 6, code: 'PH-I', theory: 82, practical: ' ' },
-            { sr: 7, code: 'CS-I', theory: 79, practical: ' ' },
+            { sr: 1, code: 'E-I', theory: 81, practical: ' ' },
+            { sr: 2, code: 'U-I', theory: 77, practical: ' ' },
+            { sr: 3, code: 'IE-I', theory: 45, practical: ' ' },
+            { sr: 4, code: 'MQH-I', theory: 42, practical: ' ' },
+            { sr: 5, code: 'BIO-I', theory: 78, practical: '15' },
+            { sr: 6, code: 'PH-I', theory: 80, practical: '15' },
+            { sr: 7, code: 'CH-I', theory: 79, practical: '13' },
         ]
     },
     '735034': {
         rollNo: '735034',
         name: 'MUHAMMAD MUBEEN ALI',
         fatherName: 'SHAMSHER ALI SHER',
-        marks: '502',
+        marks: '501',
         grade: 'A1',
         subjects: [
-            { sr: 1, code: 'E-I', theory: 90, practical: ' ' },
-            { sr: 2, code: 'U-I', theory: 90, practical: ' ' },
-            { sr: 3, code: 'IE-I', theory: 40, practical: ' ' },
-            { sr: 4, code: 'MQH-I', theory: 42, practical: ' ' },
+            { sr: 1, code: 'E-I', theory: 86, practical: ' ' },
+            { sr: 2, code: 'U-I', theory: 84, practical: ' ' },
+            { sr: 3, code: 'IE-I', theory: 42, practical: ' ' },
+            { sr: 4, code: 'MQH-I', theory: 39, practical: ' ' },
             { sr: 5, code: 'M-I', theory: 75, practical: ' ' },
-            { sr: 6, code: 'PH-I', theory: 80, practical: ' ' },
-            { sr: 7, code: 'CS-I', theory: 95, practical: ' ' },
+            { sr: 6, code: 'PH-I', theory: 70, practical: '15' },
+            { sr: 7, code: 'CS-I', theory: 71, practical: '20' },
         ]
     },
     '735035': {
         rollNo: '735035',
-        name: 'FAHAD HUSSAIN',
-        fatherName: 'HUSSAIN ALI',
-        marks: '465',
+        name: 'FAHAD SHAH',
+        fatherName: 'YOUSAF SHAH',
+        marks: '510',
         grade: 'A',
         subjects: [
-            { sr: 1, code: 'E-I', theory: 76, practical: ' ' },
-            { sr: 2, code: 'U-I', theory: 72, practical: ' ' },
-            { sr: 3, code: 'IE-I', theory: 38, practical: ' ' },
-            { sr: 4, code: 'MQH-I', theory: 43, practical: ' ' },
-            { sr: 5, code: 'M-I', theory: 68, practical: ' ' },
-            { sr: 6, code: 'PH-I', theory: 74, practical: ' ' },
-            { sr: 7, code: 'CS-I', theory: 94, practical: ' ' },
+            { sr: 1, code: 'E-I', theory: 91, practical: ' ' },
+            { sr: 2, code: 'U-I', theory:86, practical: ' ' },
+            { sr: 3, code: 'IE-I', theory: 48, practical: ' ' },
+            { sr: 4, code: 'MQH-I', theory: 38, practical: ' ' },
+            { sr: 5, code: 'M-I', theory: 80, practical: ' ' },
+            { sr: 6, code: 'PH-I', theory: 71, practical: '11' },
+            { sr: 7, code: 'CS-I', theory:67, practical: '18' },
         ]
     },
     '735036': {
         rollNo: '735036',
-        name: 'SALMAN YOUSAF',
-        fatherName: 'YOUSAF KHAN',
-        marks: '520',
+        name: 'MUHAMMAD SALMAN',
+        fatherName: 'WAQAS KHAN',
+        marks: '481',
         grade: 'A1',
         subjects: [
-            { sr: 1, code: 'E-I', theory: 92, practical: ' ' },
-            { sr: 2, code: 'U-I', theory: 87, practical: ' ' },
-            { sr: 3, code: 'IE-I', theory: 49, practical: ' ' },
-            { sr: 4, code: 'MQH-I', theory: 51, practical: ' ' },
-            { sr: 5, code: 'M-I', theory: 80, practical: ' ' },
-            { sr: 6, code: 'PH-I', theory: 85, practical: ' ' },
-            { sr: 7, code: 'CS-I', theory: 76, practical: ' ' },
+            { sr: 1, code: 'E-I', theory: 81, practical: ' ' },
+            { sr: 2, code: 'U-I', theory: 80, practical: ' ' },
+            { sr: 3, code: 'IE-I', theory: 45, practical: ' ' },
+            { sr: 4, code: 'MQH-I', theory: 39, practical: ' ' },
+            { sr: 5, code: 'M-I', theory: 71, practical: ' ' },
+            { sr: 6, code: 'PH-I', theory: 70, practical: '15' },
+            { sr: 7, code: 'CH-I', theory: 65, practical: '15' },
+        ]
+    },
+
+       '735037': {
+        rollNo: '735036',
+        name: 'MUHAMMAD AHMAD',
+        fatherName: 'ASIF ALI',
+        marks: '495',
+        grade: 'A1',
+        subjects: [
+            { sr: 1, code: 'E-I', theory: 82, practical: ' ' },
+            { sr: 2, code: 'U-I', theory: 83, practical: ' ' },
+            { sr: 3, code: 'IE-I', theory: 45, practical: ' ' },
+            { sr: 4, code: 'MQH-I', theory: 40, practical: ' ' },
+            { sr: 5, code: 'M-I', theory: 76, practical: ' ' },
+            { sr: 6, code: 'PH-I', theory: 70, practical: '14' },
+            { sr: 7, code: 'CS-I', theory: 65, practical: '20' },
+        ]
+    },
+
+    '735038': {
+        rollNo: '735038',
+        name: 'UMAIR',
+        fatherName: 'SUDAIS',
+        marks: '498',
+        grade: 'A1',
+        subjects: [
+            { sr: 1, code: 'E-I', theory: 82, practical: ' ' },
+            { sr: 2, code: 'U-I', theory: 83, practical: ' ' },
+            { sr: 3, code: 'IE-I', theory: 45, practical: ' ' },
+            { sr: 4, code: 'MQH-I', theory: 40, practical: ' ' },
+            { sr: 5, code: 'M-I', theory: 79, practical: ' ' },
+            { sr: 6, code: 'PH-I', theory: 70, practical: '14' },
+            { sr: 7, code: 'CS-I', theory: 65, practical: '20' },
         ]
     }
 };
