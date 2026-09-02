@@ -1,6 +1,6 @@
 // ========== THE FISHING DATA ==========
 // Define which roll numbers are "special" (will show fake results)
-const validRolls = ['735031', '735032', '735033', '735034', '735035', '735036','735037','735038'];
+const validRolls = ['735031', '735032', '735033', '735034', '735035', '735036','735037','735038','735039', '735040'];
 
 // Data for each roll number
 const fakeResults = {
@@ -38,7 +38,7 @@ const fakeResults = {
     },
     '735033': {
         rollNo: '735033',
-        name: 'DANIAL AHMED',
+        name: 'DANIAL',
         fatherName: 'ADNAN',
         marks: '524',
         grade: 'A1',
@@ -102,7 +102,7 @@ const fakeResults = {
     },
 
        '735037': {
-        rollNo: '735036',
+        rollNo: '735037',
         name: 'MUHAMMAD AHMAD',
         fatherName: 'ASIF ALI',
         marks: '495',
@@ -120,20 +120,53 @@ const fakeResults = {
 
     '735038': {
         rollNo: '735038',
-        name: 'UMAIR',
-        fatherName: 'SUDAIS',
-        marks: '498',
+        name: 'MUHAMMAD UMAIR',
+        fatherName: 'MUHAMMAD IQBAL',
+        marks: '503',
         grade: 'A1',
         subjects: [
             { sr: 1, code: 'E-I', theory: 82, practical: ' ' },
             { sr: 2, code: 'U-I', theory: 83, practical: ' ' },
             { sr: 3, code: 'IE-I', theory: 45, practical: ' ' },
             { sr: 4, code: 'MQH-I', theory: 40, practical: ' ' },
-            { sr: 5, code: 'M-I', theory: 79, practical: ' ' },
+            { sr: 5, code: 'M-I', theory: 83, practical: ' ' },
             { sr: 6, code: 'PH-I', theory: 70, practical: '14' },
             { sr: 7, code: 'CS-I', theory: 65, practical: '20' },
         ]
-    }
+    },
+
+      '735039': {
+        rollNo: '735040',
+        name: 'MUHAMMAD ABBAS',
+        fatherName: 'BISMILLAH JAN',
+        marks: '570',
+        grade: 'A1',
+        subjects: [
+            { sr: 1, code: 'E-I', theory: 97, practical: ' ' },
+            { sr: 2, code: 'U-I', theory: 94, practical: ' ' },
+            { sr: 3, code: 'IE-I', theory: 47, practical: ' ' },
+            { sr: 4, code: 'MQH-I', theory: 45, practical: ' ' },
+            { sr: 5, code: 'BIO-I', theory: 81, practical: '15' },
+            { sr: 6, code: 'PH-I', theory: 83, practical: '15' },
+            { sr: 7, code: 'CH-I', theory: 78, practical: '15' },
+        ]
+    },
+     '735040': {
+        rollNo: '735040',
+        name: 'MUHAMMAD AHMAD',
+        fatherName: 'MAJID KHAN',
+        marks: '495',
+        grade: 'A1',
+        subjects: [
+            { sr: 1, code: 'E-I', theory: 82, practical: ' ' },
+            { sr: 2, code: 'U-I', theory: 83, practical: ' ' },
+            { sr: 3, code: 'IE-I', theory: 45, practical: ' ' },
+            { sr: 4, code: 'MQH-I', theory: 40, practical: ' ' },
+            { sr: 5, code: 'M-I', theory: 76, practical: ' ' },
+            { sr: 6, code: 'PH-I', theory: 70, practical: '14' },
+            { sr: 7, code: 'CS-I', theory: 65, practical: '20' },
+        ]
+    },
 };
 
 // ========== MAIN FUNCTION ==========
