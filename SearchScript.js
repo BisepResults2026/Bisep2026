@@ -136,7 +136,7 @@ const fakeResults = {
     },
 
       '735039': {
-        rollNo: '735040',
+        rollNo: '735039',
         name: 'MUHAMMAD ABBAS',
         fatherName: 'BISMILLAH JAN',
         marks: '570',
