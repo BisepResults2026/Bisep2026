@@ -6,8 +6,8 @@ const validRolls = ['735031', '735032', '735033', '735034', '735035', '735036','
 const fakeResults = {
     '735031': {
         rollNo: '735031',
-        name: 'HAMID',
-        fatherName: 'SHAH FAISAL',
+        name: 'AMANATULLAH',
+        fatherName: 'ABDULWAHAB',
         marks: '450',
         grade: 'A',
         subjects: [
@@ -56,15 +56,15 @@ const fakeResults = {
         rollNo: '735034',
         name: 'MUHAMMAD MUBEEN ALI',
         fatherName: 'SHAMSHER ALI SHER',
-        marks: '501',
+        marks: '481',
         grade: 'A1',
         subjects: [
             { sr: 1, code: 'E-I', theory: 86, practical: ' ' },
-            { sr: 2, code: 'U-I', theory: 73, practical: ' ' },
+            { sr: 2, code: 'U-I', theory: 83, practical: ' ' },
             { sr: 3, code: 'IE-I', theory: 42, practical: ' ' },
             { sr: 4, code: 'MQH-I', theory: 39, practical: ' ' },
-            { sr: 5, code: 'M-I', theory: 64, practical: ' ' },
-            { sr: 6, code: 'PH-I', theory: 70, practical: '15' },
+            { sr: 5, code: 'M-I', theory: 61, practical: ' ' },
+            { sr: 6, code: 'PH-I', theory: 64, practical: '15' },
             { sr: 7, code: 'CS-I', theory: 71, practical: '20' },
         ]
     },
